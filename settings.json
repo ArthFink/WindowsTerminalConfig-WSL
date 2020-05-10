@@ -1,0 +1,206 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+
+    "profiles":
+    {
+        "defaults":
+        {
+           "fontFace": "Cascadia Mono PL"
+        },
+        "list":
+        [
+            {
+                // Make changes here to the powershell.exe profile
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                // Make changes here to the cmd.exe profile
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "cmd",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl",
+                //"colorScheme": "Builtin Solarized Dark",
+                "colorScheme": "Violet Dark",
+                "useAcrylic": true,
+                "acrylicOpacity": 0.91
+            }
+        ]
+    },
+
+    // Add custom color schemes to this array
+    "schemes": [  
+        {
+            "name": "Builtin Solarized Dark",
+            "black": "#073642",
+            "red": "#dc322f",
+            "green": "#859900",
+            "yellow": "#b58900",
+            "blue": "#268bd2",
+            "purple": "#d33682",
+            "cyan": "#2aa198",
+            "white": "#eee8d5",
+            "brightBlack": "#002b36",
+            "brightRed": "#cb4b16",
+            "brightGreen": "#586e75",
+            "brightYellow": "#657b83",
+            "brightBlue": "#839496",
+            "brightPurple": "#6c71c4",
+            "brightCyan": "#93a1a1",
+            "brightWhite": "#fdf6e3",
+            "background": "#002b36",
+            "foreground": "#839496"
+          },
+          {
+            "name": "Tomorrow Night Eighties",
+            "black": "#000000",
+            "red": "#f2777a",
+            "green": "#99cc99",
+            "yellow": "#ffcc66",
+            "blue": "#6699cc",
+            "purple": "#cc99cc",
+            "cyan": "#66cccc",
+            "white": "#ffffff",
+            "brightBlack": "#000000",
+            "brightRed": "#f2777a",
+            "brightGreen": "#99cc99",
+            "brightYellow": "#ffcc66",
+            "brightBlue": "#6699cc",
+            "brightPurple": "#cc99cc",
+            "brightCyan": "#66cccc",
+            "brightWhite": "#ffffff",
+            "background": "#2d2d2d",
+            "foreground": "#cccccc"
+          },
+          {
+            "name": "Violet Dark",
+            "black": "#56595c",
+            "red": "#c94c22",
+            "green": "#85981c",
+            "yellow": "#b4881d",
+            "blue": "#2e8bce",
+            "purple": "#d13a82",
+            "cyan": "#32a198",
+            "white": "#c9c6bd",
+            "brightBlack": "#45484b",
+            "brightRed": "#bd3613",
+            "brightGreen": "#738a04",
+            "brightYellow": "#a57705",
+            "brightBlue": "#2176c7",
+            "brightPurple": "#c61c6f",
+            "brightCyan": "#259286",
+            "brightWhite": "#c9c6bd",
+            "background": "#1c1d1f",
+            "foreground": "#708284"
+          },
+          {
+            "name": "MaterialOcean",
+            "black": "#546e7a",
+            "red": "#ff5370",
+            "green": "#c3e88d",
+            "yellow": "#ffcb6b",
+            "blue": "#82aaff",
+            "purple": "#c792ea",
+            "cyan": "#89ddff",
+            "white": "#ffffff",
+            "brightBlack": "#546e7a",
+            "brightRed": "#ff5370",
+            "brightGreen": "#c3e88d",
+            "brightYellow": "#ffcb6b",
+            "brightBlue": "#82aaff",
+            "brightPurple": "#c792ea",
+            "brightCyan": "#89ddff",
+            "brightWhite": "#ffffff",
+            "background": "#0f111a",
+            "foreground": "#8f93a2"
+          },
+          {
+            "name": "LiquidCarbon",
+            "black": "#000000",
+            "red": "#ff3030",
+            "green": "#559a70",
+            "yellow": "#ccac00",
+            "blue": "#0099cc",
+            "purple": "#cc69c8",
+            "cyan": "#7ac4cc",
+            "white": "#bccccc",
+            "brightBlack": "#000000",
+            "brightRed": "#ff3030",
+            "brightGreen": "#559a70",
+            "brightYellow": "#ccac00",
+            "brightBlue": "#0099cc",
+            "brightPurple": "#cc69c8",
+            "brightCyan": "#7ac4cc",
+            "brightWhite": "#bccccc",
+            "background": "#303030",
+            "foreground": "#afc2c2"
+          },
+          {
+            "name": "Espresso",
+            "black": "#353535",
+            "red": "#d25252",
+            "green": "#a5c261",
+            "yellow": "#ffc66d",
+            "blue": "#6c99bb",
+            "purple": "#d197d9",
+            "cyan": "#bed6ff",
+            "white": "#eeeeec",
+            "brightBlack": "#535353",
+            "brightRed": "#f00c0c",
+            "brightGreen": "#c2e075",
+            "brightYellow": "#e1e48b",
+            "brightBlue": "#8ab7d9",
+            "brightPurple": "#efb5f7",
+            "brightCyan": "#dcf4ff",
+            "brightWhite": "#ffffff",
+            "background": "#323232",
+            "foreground": "#ffffff"
+          }
+    ],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": [
+        {
+            "command":"find",
+            "keys":["ctrl+f"]
+        },
+        {
+            "command":"paste",
+            "keys":["ctrl+shift+v"]
+        },
+        {
+            "command":"splitPane",
+            "keys":["ctrl+tab"]
+        },
+        {
+            "command":"closePane",
+            "keys":["ctrl+shift+q"]
+        },
+        {
+            "command":"copy",
+            "keys":["ctrl+shift+c"]
+        }
+    ]
+    
+}
