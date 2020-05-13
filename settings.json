@@ -11,7 +11,8 @@
     {
         "defaults":
         {
-           "fontFace": "Cascadia Mono PL"
+           //"fontFace": "Cascadia Mono PL"
+           "fontFace": "CaskaydiaCove Nerd Font"
         },
         "list":
         [
@@ -43,8 +44,10 @@
                 //"colorScheme": "Builtin Solarized Dark",
                 "colorScheme": "Violet Dark",
                 "useAcrylic": true,
-                "acrylicOpacity": 0.91
+                "acrylicOpacity": 0.91,
+                "fontFace": "CaskaydiaCove Nerd Font"
             }
+
         ]
     },
 
