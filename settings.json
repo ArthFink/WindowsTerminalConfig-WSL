@@ -11,21 +11,17 @@
     {
         "defaults":
         {
-           //"fontFace": "Cascadia Mono PL"
            "fontFace": "CaskaydiaCove Nerd Font"
         },
         "list":
         [
             {
-                // Make changes here to the powershell.exe profile
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "name": "Windows PowerShell",
                 "commandline": "powershell.exe",
                 "hidden": false
             },
-            {
-                // Make changes here to the cmd.exe profile
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            {                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "name": "cmd",
                 "commandline": "cmd.exe",
                 "hidden": false
@@ -41,17 +37,19 @@
                 "hidden": false,
                 "name": "Debian",
                 "source": "Windows.Terminal.Wsl",
-                //"colorScheme": "Builtin Solarized Dark",
                 "colorScheme": "Violet Dark",
                 "useAcrylic": true,
                 "acrylicOpacity": 0.91,
-                "fontFace": "CaskaydiaCove Nerd Font"
+				"fontFace": "CaskaydiaCove Nerd Font",
+				"cursorShape": "bar",
+				"historySize": 10000,
+				"scrollbarState": "hidden",
+				"suppressApplicationTitle": true
             }
 
         ]
     },
 
-    // Add custom color schemes to this array
     "schemes": [  
         {
             "name": "Builtin Solarized Dark",
@@ -181,7 +179,6 @@
           }
     ],
 
-    // Add any keybinding overrides to this array.
     // To unbind a default keybinding, set the command to "unbound"
     "keybindings": [
         {
@@ -193,17 +190,14 @@
             "keys":["ctrl+shift+v"]
         },
         {
-            "command":"splitPane",
-            "keys":["ctrl+tab"]
-        },
-        {
             "command":"closePane",
             "keys":["ctrl+shift+q"]
         },
         {
             "command":"copy",
             "keys":["ctrl+shift+c"]
-        }
+		},
+		{"keys":["ctrl+shift+tab"],"command":{"action": "splitPane","split": "vertical"}},
+		{"keys":["ctrl+tab"],"command":{"action": "splitPane","split": "horizontal"}}
     ]
-    
 }
