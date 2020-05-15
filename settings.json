@@ -15,23 +15,27 @@
         },
         "list":
         [
+			//Windows
             {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "name": "Windows PowerShell",
                 "commandline": "powershell.exe",
                 "hidden": false
             },
-            {                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            {                
+				"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "name": "cmd",
                 "commandline": "cmd.exe",
                 "hidden": false
-            },
+			},
+			//Cloud
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
+                "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
+			},
+			//Linux
             {
                 "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
                 "hidden": false,
@@ -45,7 +49,35 @@
 				"historySize": 10000,
 				"scrollbarState": "hidden",
 				"suppressApplicationTitle": true
-            }
+			},
+			//SSH
+			{
+				"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa3101}",
+                "name": "Proxmox SSH",
+                "commandline": "ssh root@10.100.255.1 -p 22",
+				"hidden": false,
+				"suppressApplicationTitle": true,
+				"icon": "C:\\Users\\Arthf\\.terminalImgs\\prox.png",
+				"colorScheme": "Violet Dark"
+			},	
+			{
+				"guid": "{0ca30dad-35be-5f56-a8ff-afceeeaa3101}",
+                "name": "Arch SSH",
+                "commandline": "ssh root@10.100.255.5 -p 22",
+				"hidden": false,
+				"suppressApplicationTitle": true,
+				"icon": "C:\\Users\\Arthf\\.terminalImgs\\Arch.png",
+				"colorScheme": "Violet Dark"
+			},	
+			{
+				"guid": "{0ca30dad-353e-5f56-a8ff-afceeeaa3101}",
+                "name": "FreeNas SSH",
+                "commandline": "ssh root@10.100.255.25 -p 22",
+				"hidden": false,
+				"suppressApplicationTitle": true,
+				"icon": "C:\\Users\\Arthf\\.terminalImgs\\freenas.png",
+				"colorScheme": "Violet Dark"
+			}
 
         ]
     },
@@ -175,7 +207,9 @@
             "brightCyan": "#dcf4ff",
             "brightWhite": "#ffffff",
             "background": "#323232",
-            "foreground": "#ffffff"
+			"foreground": "#ffffff"
+			
+			
           }
     ],
 
