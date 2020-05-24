@@ -11,7 +11,8 @@
     {
         "defaults":
         {
-           "fontFace": "CaskaydiaCove Nerd Font"
+		   "fontFace": "CaskaydiaCove Nerd Font",
+		   "scrollbarState": "hidden"
         },
         "list":
         [
@@ -41,14 +42,23 @@
                 "hidden": false,
                 "name": "Debian",
                 "source": "Windows.Terminal.Wsl",
-                "colorScheme": "Violet Dark",
+				"colorScheme": "nord",
                 "useAcrylic": true,
-                "acrylicOpacity": 0.91,
-				"fontFace": "CaskaydiaCove Nerd Font",
+                "acrylicOpacity": 0.93,
 				"cursorShape": "bar",
 				"historySize": 10000,
-				"scrollbarState": "hidden",
 				"suppressApplicationTitle": true
+			},
+			{
+			    "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+			    "hidden": true,
+				"name": "Kali",
+				"source": "Windows.Terminal.Wsl",
+				"colorScheme": "Violet Dark",
+				"useAcrylic": true,
+				"acrylicOpacity": 0.91,
+				"suppressApplicationTitle": true
+
 			},
 			//SSH
 			{
@@ -58,7 +68,9 @@
 				"hidden": false,
 				"suppressApplicationTitle": true,
 				"icon": "C:\\Users\\Arthf\\.terminalImgs\\prox.png",
-				"colorScheme": "Violet Dark"
+				"colorScheme": "Violet Dark",
+				"useAcrylic": true,
+                "acrylicOpacity": 0.91
 			},	
 			{
 				"guid": "{0ca30dad-35be-5f56-a8ff-afceeeaa3101}",
@@ -67,7 +79,9 @@
 				"hidden": false,
 				"suppressApplicationTitle": true,
 				"icon": "C:\\Users\\Arthf\\.terminalImgs\\Arch.png",
-				"colorScheme": "Violet Dark"
+				"colorScheme": "Violet Dark",
+				"useAcrylic": true,
+                "acrylicOpacity": 0.91
 			},	
 			{
 				"guid": "{0ca30dad-353e-5f56-a8ff-afceeeaa3101}",
@@ -76,13 +90,20 @@
 				"hidden": false,
 				"suppressApplicationTitle": true,
 				"icon": "C:\\Users\\Arthf\\.terminalImgs\\freenas.png",
-				"colorScheme": "Violet Dark"
+				"colorScheme": "Violet Dark",
+				"useAcrylic": true,
+                "acrylicOpacity": 0.91
+			},
+			{
+			    "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+			    "hidden": false,
+			    "name": "PowerShell",
+			    "source": "Windows.Terminal.PowershellCore"
 			}
-
         ]
     },
 
-    "schemes": [  
+    "schemes": [
         {
             "name": "Builtin Solarized Dark",
             "black": "#073642",
@@ -103,7 +124,28 @@
             "brightWhite": "#fdf6e3",
             "background": "#002b36",
             "foreground": "#839496"
-          },
+		  },
+		  {
+			"name": "Arthur",
+			"black": "#3d352a",
+			"red": "#cd5c5c",
+			"green": "#86af80",
+			"yellow": "#e8ae5b",
+			"blue": "#6495ed",
+			"purple": "#deb887",
+			"cyan": "#b0c4de",
+			"white": "#bbaa99",
+			"brightBlack": "#554444",
+			"brightRed": "#cc5533",
+			"brightGreen": "#88aa22",
+			"brightYellow": "#ffa75d",
+			"brightBlue": "#87ceeb",
+			"brightPurple": "#996600",
+			"brightCyan": "#b0c4de",
+			"brightWhite": "#ddccbb",
+			"background": "#1c1c1c",
+			"foreground": "#ddeedd"
+		  },
           {
             "name": "Tomorrow Night Eighties",
             "black": "#000000",
@@ -208,9 +250,28 @@
             "brightWhite": "#ffffff",
             "background": "#323232",
 			"foreground": "#ffffff"
-			
-			
-          }
+		  },
+		  {
+			"name" : "nord",
+			"background" : "#2e3440",
+			"foreground" : "#d8dee9",
+			"black": "#3b4252",
+			"blue": "#81a1c1",
+			"brightBlack": "#4c566a",
+			"brightBlue": "#81a1c1",
+			"brightCyan": "#8fbcbb",
+			"brightGreen": "#a3be8c",
+			"brightPurple": "#b48ead",
+			"brightRed": "#bf616a",
+			"brightWhite": "#eceff4",
+			"brightYellow": "#ebcb8b",
+			"cyan": "#88c0d0",
+			"green": "#a3be8c",
+			"purple": "#b48ead",
+			"red": "#bf616a",
+			"white": "#e5e9f0",
+			"yellow": "#ebcb8b"
+		}
     ],
 
     // To unbind a default keybinding, set the command to "unbound"
