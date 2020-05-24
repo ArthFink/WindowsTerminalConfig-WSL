@@ -15,7 +15,6 @@ export ZSH="/home/arth/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="wedisagree"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
@@ -50,7 +49,7 @@ DISABLE_LS_COLORS="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -114,6 +113,7 @@ alias zcon="vim ~/.zshrc"
 alias vim="nvim"
 alias v="nvim"
 
+alias ls="lsd"
 #SSH_Key
 alias _sshProxmox="ssh root@10.100.255.1"
 alias _sshFreenas="ssh root@10.100.255.25"
@@ -127,8 +127,11 @@ alias mvTerminalSettings="cp /mnt/c/Users/Arthf/AppData/Local/Packages/Microsoft
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source ~/gitRepos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/gitRepos/fzf/shell/key-bindings.zsh
+source ~/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/git/fzf/shell/key-bindings.zsh
 
 alias winExp="explorer.exe"
 alias winExpInDir="explorer.exe ."
+
+#XServer
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
